@@ -1,17 +1,17 @@
+  
 import React from 'react'
 import Head from 'next/head'
+import Sidebar from './Sidebar'
 
-const Layout = () => {
+const Layout = ({children}) => {
     return (
         <>
       <Head>
         <title>CRM. Administracion</title>
       </Head>
-      <h1>desde Layout</h1>
-      <div className="bg-gray-800 min-h-screen">
-        <Layout>
-          <h2>Desde index</h2>
-        </Layout>
+      <div className="bg-gray-100 min-h-screen">
+        <Sidebar/>
+        {children}
       </div>
     </>
     )
