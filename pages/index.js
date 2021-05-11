@@ -2,8 +2,8 @@ import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div>
-      <h2>Desde index</h2>
-    </div>
+    <Layout>
+      <h1 className="text-2xl text-gray-800 font-light">Clientes</h1>
+    </Layout>
   );
 }
