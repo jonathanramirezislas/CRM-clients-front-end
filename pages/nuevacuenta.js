@@ -115,10 +115,10 @@ const Nuevacuenta = () => {
                 value={formik.values.password}
               />
             </div>
-            { formik.touched.password && formik.errors.password ? (
+            { formik.touched.password  && formik.errors.password  ? (
                 <div className="my-2 bg-red-100 border-l-2 border-red-500 text-red-700 p-4">
                     <p className="font-bold">Error</p>
-                    <p>{formik.errors.password}</p>
+                    <p>{formik.errors.password }</p>
                 </div>
             ) : null  }
 
